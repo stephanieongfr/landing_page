@@ -1,0 +1,180 @@
+:root {
+  --turquoise: rgb(45, 174, 194);
+  --light-turquoise: rgba(45, 174, 194, 0.326);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: var(--turquoise);
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+}
+
+#header-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+#nav-bar ul {
+  display: flex;
+}
+
+#nav-bar ul li {
+  margin-left: 1.2rem;
+  color: white;
+  font-size: .9rem;
+}
+
+main {
+  margin-top: 6.25rem;
+  margin-bottom: 1.25rem;
+}
+
+section {
+  margin: 0 auto;
+  padding: 0 2rem;
+  /* background-color: lightpink; */
+}
+
+.form__container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  margin: 2rem auto;
+}
+
+input {
+  height: 2rem;
+}
+
+input[type="email"] {
+  border-radius: 6px;
+  width: 20em;
+  border: 1px solid black;
+  padding-left: .4rem;
+}
+
+input[type="submit"] {
+  border-radius: 20px;
+  width: 10em;
+  margin-top: 1rem;
+  border: none;
+  background-color: var(--turquoise);
+  color: white;
+}
+
+.video__container {
+  /* margin: 2rem 0; */
+  background-color: var(--light-turquoise);
+}
+
+#video {
+  width: 100%;
+  margin: 3rem auto;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem
+}
+
+.grid div {
+  width: 200px;
+  border: 2px solid var(--turquoise);
+  border-radius: 2em;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 430px) {
+  #video {
+    width: 360px;
+    height: 260px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #nav-bar ul li {
+    font-size: 1.2rem;
+  }
+
+  main {
+    margin-top: 150px;
+  }
+
+  section {
+    padding: 0 4rem;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    margin: 2rem auto;
+  }
+  
+  #video {
+    width: 500px;
+    height: 360px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

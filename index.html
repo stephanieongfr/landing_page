@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Stephanie Ong">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo__container">
+        <img id="header-img" src="https://cdn.pixabay.com/photo/2022/02/05/18/53/fitness-6995550_1280.png" width="50" />
+        <h1>Sweat As</h1>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#about">About us</a></li>
+          <li><a class="nav-link" href="#programs">Workout plans</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Your gym coach in a pocket</h1>
+      <section class="form__container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <input id="email" placeholder="Enter your email address" type="email" name="email">
+          <input id="submit" type="submit" value="SEND">
+        </form>
+      </section>
+      <section>
+        <article id="about">
+          <h2>Workout anywhere, anytime</h2>
+          <p>You can train with us 24/7.</p>
+        </article>
+        <article id="programs">
+          <h2>Choose the right program</h2>
+          <p>Try different programs and customize them to find the best match for you.</p>
+        </article>
+      </section>
+      <section class="video__container">
+        <iframe id="video" src="https://cdn.pixabay.com/video/2024/02/15/200657-913478674_large.mp4"  allowfullscreen frameborder="0"></iframe>
+      </section>
+      <section id="pricing" class="grid">
+        <div>
+          <h3>Free plan</h3>
+          <h4>&#8364;0</h4>
+          <p>Get the basics</p>
+          <ul>
+            <li>10 fitness programs</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Life-changer</h3>
+          <h4>&#8364;9.99 / month</h4>
+          <p>Build new habits</p>
+          <ul>
+            <li>25 fitness programs</li>
+            <li>Nutritional tips</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Premium</h3>
+          <h4>&#8364;29.99 / month</h4>
+          <p>Get the full experience</p>
+          <ul>
+            <li>Unlimited programs</li>
+            <li>Download workouts</li>
+            <li>Customizable programs</li>
+            <li>Healthy recipes</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
